@@ -1,0 +1,19 @@
+.dtc-btn {
+  flex: none;
+  margin-left: 8px;
+  padding: 2px 10px;
+  border: none;
+  border-radius: 4px;
+  background: #5865f2;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.dtc-btn:hover { background: #4752c4; }
+.dtc-btn:disabled { opacity: 0.7; cursor: progress; }
+.dtc-btn.dtc-ok { background: #248046; }
+.dtc-btn.dtc-err { background: #da373c; }

@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Discord TXT 一鍵複製",
+  "version": "1.0.0",
+  "description": "在 Discord 網頁版的 txt 附件旁邊加一個「複製」按鈕，直接把內容複製到剪貼簿，不下載檔案。",
+  "host_permissions": [
+    "https://cdn.discordapp.com/*",
+    "https://media.discordapp.net/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://discord.com/*", "https://*.discord.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
